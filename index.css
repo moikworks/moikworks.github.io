@@ -167,5 +167,9 @@ form button:hover {
   .error-strip {
       height: 60.5vh;
   }
+
+  .news-image {
+    width: 75%;
+  }
   
 }
