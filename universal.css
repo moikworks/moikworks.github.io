@@ -41,7 +41,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     height: 100px;
-    font-family: goudy;
+    font-family: Arial, sans-serif;
     font-size: 14pt;
     border-bottom: 5px solid #46A32C;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -51,9 +51,14 @@ a:hover {
 .universal-header > a {
     width: 150px;
     height: 25px;
+    transition: all 0.5s;
 }
 .universal-header > .header-socials {
     width: 225px;
+}
+
+.header-item:hover {
+    transform: scale(1.1);
 }
 
 /* Dropdown Button */
@@ -61,7 +66,7 @@ a:hover {
     background-color: transparent;
     padding: 0px;
     border: none;
-    font-family: goudy;
+    font-family: Arial, sans-serif;
     font-size: 14pt;
     color: var(--text);
     text-decoration: none;
@@ -132,6 +137,11 @@ a:hover {
 
 .header-socials > a > img {
     height:24px;
+    transition: all 0.5s;
+}
+
+.header-socials > a > img:hover {
+    transform: scale(1.6);
 }
 
 
@@ -145,7 +155,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     height: 50px;
-    font-family: cecep;
+    font-family: Arial, sans-serif;
     font-size: 14pt;
     border-top: 5px solid #46A32C;
 }
@@ -168,6 +178,11 @@ a:hover {
 
 .footer-socials > a > img {
     height:24px;
+    transition: all 0.5s;
+}
+
+.footer-socials > a > img:hover {
+    transform: scale(1.6);
 }
 
 #unhighlight {
@@ -194,7 +209,13 @@ a:hover {
 }
 @media screen and (max-width: 900px) {
     .header-socials {
-        display: none;
+        position: absolute;
+        top: 100px;
+        padding: 20px;
+        background-color: var(--header-background);
+        border-left: 5px solid #46A32C;
+        border-right: 5px solid #46A32C;
+        border-bottom: 5px solid #46A32C;
     }
 }
 @media screen and (max-width: 750px) {

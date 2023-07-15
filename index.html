@@ -11,9 +11,9 @@
 <body>
     <header class="universal-header">
         <a rel="noopener" href="#" class="header-home"><img id="header-home" src="index/moikworks-no-padding.png" alt="moikworks Logo"></a>
-        <a rel="noopener" href="about" class="header-blog">about</a>
-        <a rel="noopener" href="games" class="header-blog">games</a>
-        <a rel="noopener" href="blog" class="header-blog">blog</a>
+        <a rel="noopener" href="about" class="header-item">about</a>
+        <a rel="noopener" href="games" class="header-item">games</a>
+        <a rel="noopener" href="blog" class="header-item">blog</a>
         <div class="header-socials">
             <a rel="noopener" href="https://instagram.com/moikworks" target="_blank"><img src="social-icons/instagram-white.png" alt="Instagram Logo"></a>
             <a rel="noopener" href="https://twitter.com/moikworks" target="_blank"><img src="social-icons/twitter-white.png" alt="Twitter Logo"></a>
@@ -22,32 +22,69 @@
         </div>
     </header>
 
-    <div class="strips">
-        <div class="dark-strip">
-            <h1>Portfolio</h1>
-            <p>Visit my portfolio of projects, including coding projects, books, and more.</p>
-            <img src="index/atompm-thumb.png" alt="Portfolio Picture">
-            <button type="button" onclick="window.location='portfolio'">VIEW</button>
+    <section class="alt-section" id="splash">
+        <div class="content">
+            <h2>news</h2>
+            <img class="news-image" src="index/carmsboroughvigilantes.png" />
+            <p>something wicked this way (eventually) comes...</p>
+            <a href="blog/announcing-moikworks" class="btn">view post</a>
         </div>
-        <div class="light-strip">
-            <h1>Résumé</h1>
-            <p>Read or download my résumé.</p>
-            <img src="index/good me.webp" alt="Resume Picture">
-            <button type="button" onclick="window.location='resume'">VIEW</button>
+    </section>
+
+    <section id="home">
+        <div class="content">
+            <img class="leaves" src="logo/leaves.png" />
+            <h1>moikworks</h1>
+            <h2>putting the "game" back in "gaming"</h2>
+            <p>cliché and overused, but a phrase we stick by. in a market of half-baked AAA games, early access cash grabs, and ad-ridden mobile games, moikworks is looking to stand out against the crowd of mediocrity and provide worthwhile experiences for all.</p>
+            <a href="games" class="btn">view games</a>
+            <img class="melon" src="logo/melon-only.png" />
         </div>
-        <div class="dark-strip">
-            <h1>Blog</h1>
-            <p>Visit the blog, where you can stay updated on projects of all sorts.</p>
-            <img src="index/blog-thumbnail.png" alt="Blog Picture">
-            <button type="button" onclick="window.location='blog'">VIEW</button>
+    </section>
+    
+    <section class="alt-section" id="about">
+        <div class="content">
+            <img class="leaves" src="logo/leaves.png" />
+            <h2>about us</h2>
+            <p>headed by michael "moik" "moikheck" heckman, moikworks is a game development studio aiming to bring high-quality games with a wide variety of platforms and genres to you. learn more about us and our goals below.</p>
+            <a href="about" class="btn">about us</a>
+            <img class="melon" src="logo/melon-only.png" />
         </div>
-        <div class="light-strip">
-            <h1>Coming Soon</h1>
-            <p>View all upcoming projects, including coding projects, books, and more.</p>
-            <img src="index/comingsoon.png" alt="Coming Soon Picture">
-            <button type="button" onclick="window.location='coming-soon'">VIEW</button>
+    </section>
+    
+    <section id="portfolio">
+        <div class="content">
+            <h2>portfolio</h2>
+            <p>nothing to show off yet. i know, sorry.</p>
+            <!-- <div class="game">
+                <img src="game1.jpg" alt="Game 1">
+                <h3>Game 1</h3>
+            </div>
+            <div class="game">
+                <img src="game2.jpg" alt="Game 2">
+                <h3>Game 2</h3>
+            </div>
+            <div class="game">
+                <img src="game3.jpg" alt="Game 3">
+                <h3>Game 3</h3>
+            </div> -->
         </div>
-    </div>
+    </section>
+    
+    <section class="alt-section" id="contact">
+        <div class="content">
+            <img class="leaves" src="logo/leaves.png" />
+            <h2>contact us</h2>
+            <p>interested in working with us, or want to know more? get in touch!</p>
+            <form>
+                <input type="text" id="name" placeholder="your name">
+                <input type="email" id="email" placeholder="your email">
+                <textarea id="message" placeholder="your message"></textarea>
+                <button type="submit" onclick="sendEmail()">send</button>
+            </form>
+            <img class="melon" src="logo/melon-only.png" />
+        </div>
+    </section>
 
     <footer class="universal-footer">
         <div class="footer-copyright">© 2023 moikworks</div>
@@ -58,5 +95,18 @@
             <a rel="noopener" href="https://www.youtube.com/channel/UCpuKLzlFCm9nsz_exLnBulA" target="_blank"><img src="social-icons/youtube-white.png" alt="YouTube Logo"></a>
         </div>
     </footer>
+
+    
+  <script>
+    function sendEmail() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const mailtoLink = `mailto:moikworks@gmail.com?subject=Message from ${name} (${email})&body=${message}`;
+
+      window.location.href = mailtoLink;
+    }
+  </script>
 </body>
 </html>
