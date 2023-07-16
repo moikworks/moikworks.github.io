@@ -1,0 +1,162 @@
+/* Reset default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.news-image {
+    width: 400px;
+    border-radius: 10%;
+    margin-bottom: 30px;
+    border: 8px solid #46A32C;
+    filter: drop-shadow(10px 10px 7px #285f19);
+    transition: all 0.5s;
+}
+
+.news-image:hover {
+    transform: scale(1.1);
+}
+
+section {
+  padding: 50px 20px;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+.alt-section {
+    background-color: #0f0f0f;
+}
+
+#splash {
+    padding: 100px 20px 50px 20px;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #461F21;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #371F21;
+  transform: scale(1.1);
+}
+
+.game {
+  margin-bottom: 40px;
+}
+
+.game img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.game h3 {
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  text-indent: 10px;
+}
+
+form button {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  background-color: #461F21;
+  color: #fff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.error-strip {
+    height: 61vh;
+}
+
+form button:hover {
+  background-color: #371F21;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+  
+  form button {
+    font-size: 16px;
+  }
+
+  .error-strip {
+      height: 60.5vh;
+  }
+
+  .news-image {
+    width: 75%;
+  }
+  
+}
