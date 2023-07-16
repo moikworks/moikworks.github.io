@@ -6,9 +6,6 @@
     align-content: center;
     align-items: center;
     justify-items: center;
-}
-
-body {  
     background-color: #1a1a1a;
 }
 
@@ -19,8 +16,8 @@ body {
 
 .featured {
     margin-top: 5%;
-    padding-top: 5%;
-    width:90%;
+    padding: 5% 10%;
+    width:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,8 +34,8 @@ body {
 
 .list {
     margin-bottom: 5%;
-    padding-bottom: 5%;
-    width:90%;
+    padding: 5% 10%;
+    width:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +107,8 @@ body {
 
 @media screen and (max-width: 750px) {
     .featured, .list {
-        width: 95%;
+        width: auto;
+        padding: 5%;
     }
     .post-thumbnail {
         width:85%;
