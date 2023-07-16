@@ -185,6 +185,18 @@ a:hover {
     transform: scale(1.6);
 }
 
+.leaves {
+    width: 100px;
+}
+
+.melon {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+
 #unhighlight {
     color: var(--text-selected);
 }

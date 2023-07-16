@@ -18,19 +18,6 @@ button {
   color: #fff;
 }
 
-
-.leaves {
-    width: 100px;
-}
-
-.melon {
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
-}
-
 .news-image {
     width: 400px;
     border-radius: 10%;
