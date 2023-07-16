@@ -16,8 +16,8 @@
 
 .featured {
     margin-top: 5%;
-    padding: 5% 10%;
-    width:auto;
+    padding: 5%;
+    width:80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,8 +34,8 @@
 
 .list {
     margin-bottom: 5%;
-    padding: 5% 10%;
-    width:auto;
+    padding: 5%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,7 +48,7 @@
 
 .post-thumbnail {
     font-family: goudy;
-    width:auto;
+    width:70%;
     height: auto;
     background-color: #1a1a1a;
     display:grid;
@@ -107,11 +107,12 @@
 
 @media screen and (max-width: 750px) {
     .featured, .list {
-        width: auto;
+        width: 80%;
         padding: 5%;
     }
     .post-thumbnail {
         width:85%;
+        padding-top: 3%;
         display:grid;
         grid-template-columns: 175px 1fr;
         grid-template-rows: .1fr .5fr 1fr;
