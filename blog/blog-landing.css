@@ -111,6 +111,7 @@
     .featured, .list {
         width: 80%;
         padding: 5%;
+        margin-top: 20%;
     }
     .post-thumbnail {
         width:90%;
