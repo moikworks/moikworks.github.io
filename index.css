@@ -21,7 +21,7 @@ button {
 .news-image {
     width: 400px;
     border-radius: 10%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: 8px solid #46A32C;
     filter: drop-shadow(10px 10px 7px #285f19);
     transition: all 0.5s;
