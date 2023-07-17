@@ -1,5 +1,5 @@
 .container {
-    background-color: rgb(173,131,101);
+    background-color: #1a1a1a;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -7,7 +7,6 @@
     justify-items: center;
     align-content: center;
     align-items: center;
-    font-family: goudy;
     padding: 5% 0%;
 }
 
@@ -15,15 +14,15 @@
     width: 60%;
     text-align: left;
     font-size: 16pt;
-}
-.all-posts:hover {
-    color:white;
+    margin-bottom: 5px;
 }
 
 .post {
     width: 60%;
-    border: 3px double lightgray;
-    background-color: aliceblue;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    background-color: var(--header-background);
+    color: white;
 }
 
 .title {
@@ -41,12 +40,6 @@
 #indent {
     text-indent: 2.5%;
 }
-.underline {
-    text-decoration: underline;
-}
-.underline:hover {
-    color:rgb(173,131,101);;
-}
 
 .post p {
     padding: 0% 10%;
@@ -55,10 +48,11 @@
 }
 
 .post img {
-    padding: 5% 10% 7%;
+    margin: 5% 10% 7%;
     width: 80%;
     align-self: center;
     justify-self: center;
+    border-radius: 10%;
 }
 
 
@@ -71,5 +65,8 @@
     }
     #indent {
         text-indent: 5%;
+    }
+    .all-posts {
+        margin-top: 10%;
     }
 }
