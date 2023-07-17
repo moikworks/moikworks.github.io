@@ -187,6 +187,7 @@ a:hover {
 
 .leaves {
     width: 100px;
+    align-self: center;
 }
 
 .melon {

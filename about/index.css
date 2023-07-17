@@ -29,6 +29,8 @@ section {
   padding: 50px 20px;
   align-items: center;
   background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
 }
 
 .alt-section {
