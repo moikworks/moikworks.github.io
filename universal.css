@@ -219,6 +219,11 @@ a:hover {
     left:5%;
     top:10px;
 }
+
+#underline {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 900px) {
     .header-socials {
         position: absolute;
